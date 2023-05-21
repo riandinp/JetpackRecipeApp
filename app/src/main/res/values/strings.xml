@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Recipe App</string>
+    <string name="thumbnail">Foto Makanan/Minuman</string>
+    <string name="create_by">"Oleh %s"</string>
+    <string name="placeholder_searchbar">Cari resep keinginanmu</string>
+    <string name="menu_home">Beranda</string>
+    <string name="menu_favorite">Favorit</string>
+    <string name="menu_profile">Profil</string>
+    <string name="desc_foto_profil">Foto Profil</string>
+    <string name="profile_picture_link">https://dicoding-web-img.sgp1.cdn.digitaloceanspaces.com/small/avatar/dos:a58004782fd760c3caa56429a569c56320230307234319.png</string>
+    <string name="author_name">Riandi Nandaputra</string>
+    <string name="author_email">riandinp26@gmail.com</string>
+    <string name="no_recipe_favorite">Tidak ada resep favorit</string>
+    <string name="error_message">Error: %s</string>
+    <string name="desc_image">Gambar %s</string>
+    <string name="description">Deskripsi</string>
+    <string name="ingredients">Bahan-bahan</string>
+    <string name="stepbystep">Cara Membuat</string>
+    <string name="menu_detail">Detail Resep</string>
+    <string name="is_favorite">isFavorite</string>
+    <string name="favorite_deleted">Favorit Berhasil dihapus</string>
+    <string name="favorite_added">Favorit Berhasil ditambahkan</string>
+    <string name="back_button">Back Button</string>
+    <string name="icon">Icon</string>
+</resources>

@@ -26,4 +26,6 @@
     <string name="author_username">riandinp27</string>
     <string name="profile_webview">Dicoding Profile WebView</string>
     <string name="about_page">about_page</string>
+    <string name="favorite_page">favorite_page</string>
+    <string name="home_page">home_page</string>
 </resources>

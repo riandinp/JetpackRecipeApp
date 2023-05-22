@@ -30,16 +30,19 @@ fun BottomBar(
         val navigationItems = listOf(
             NavigationItem(
                 title = stringResource(R.string.menu_home),
+                description = stringResource(R.string.home_page),
                 icon = Icons.Default.Home,
                 screen = Screen.Home
             ),
             NavigationItem(
                 title = stringResource(R.string.menu_favorite),
+                description = stringResource(R.string.favorite_page),
                 icon = Icons.Default.Favorite,
                 screen = Screen.Favorite
             ),
             NavigationItem(
                 title = stringResource(R.string.menu_profile),
+                description = stringResource(R.string.about_page),
                 icon = Icons.Default.AccountCircle,
                 screen = Screen.Profile
             ),
@@ -54,7 +57,7 @@ fun BottomBar(
                     icon = {
                         Icon(
                             imageVector = item.icon,
-                            contentDescription = item.title
+                            contentDescription = item.description
                         )
                     },
                     label = { Text(item.title) },

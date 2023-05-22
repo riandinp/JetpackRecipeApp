@@ -28,7 +28,7 @@ fun JetRecipeApp(
 
     Scaffold(
         bottomBar = {
-            if (currentRoute != Screen.DetailRecipe.route) {
+            if (currentRoute != Screen.DetailRecipe.route && currentRoute != Screen.ProfileWeb.route) {
                 BottomBar(navController)
             }
         },

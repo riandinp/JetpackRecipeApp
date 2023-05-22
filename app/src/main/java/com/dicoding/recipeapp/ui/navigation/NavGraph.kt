@@ -11,6 +11,7 @@ import com.dicoding.recipeapp.ui.screen.detail.DetailScreen
 import com.dicoding.recipeapp.ui.screen.favorite.FavoriteScreen
 import com.dicoding.recipeapp.ui.screen.home.HomeScreen
 import com.dicoding.recipeapp.ui.screen.profile.ProfileScreen
+import com.dicoding.recipeapp.ui.screen.profile.ProfileWebScreen
 
 @Composable
 fun SetupNavGraph(
@@ -38,7 +39,18 @@ fun SetupNavGraph(
             FavoriteScreen { navController.navigate(Screen.DetailRecipe.createRoute(it)) }
         }
         composable(route = Screen.Profile.route) {
-            ProfileScreen()
+            ProfileScreen {
+                navController.navigate(Screen.ProfileWeb.createRoute(it))
+            }
+        }
+        composable(
+            route = Screen.ProfileWeb.route,
+            arguments = listOf(navArgument("userName") {type = NavType.StringType})
+        ) {
+            val username = it.arguments?.getString("userName") ?:""
+            ProfileWebScreen(username) {
+                navController.navigateUp()
+            }
         }
 
     }
